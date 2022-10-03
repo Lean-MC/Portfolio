@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222;
+}
+
+/*----------------Navbar----------*/
+
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  padding: 0.8em;
+}
+
+.navbar {
+  border-bottom: 1px solid #2fb4cc;
+}
+.navbar a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+ 
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    padding-top: 2px;
+  }
+}
+}
+/*----------------Navbar----------*/
+.presentacion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.presentacion img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+h1{
+  margin: 20px;
+  color: #7a7a7a;
+}
+
+h2 {
+  display: inline-block;
+  color: #7a7a7a;
+  font-size: 36px;
+}
+
+.text-container {
+  display: inline-flex;
+  flex-direction: column;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+.text-container span {
+  height: 2.3rem;
+  font-size: 36px;
+  animation: moveUp 10s linear infinite;
+}
+
+#span1{
+  color: lightcoral;
+}
+
+#span2{
+  color: #2fb4cc;
+  }
+
+  #span3{
+    color: #bc11e7;
+    }
+
+    #span4{
+      color: #1435c7;
+      }
+
+      #span5{
+        color: #c03219a4;
+        }
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  
+  5% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(-2.3rem);
+  }
+
+  25% {
+    transform: translateY(-2.3rem);
+  }
+
+  35% {
+    transform: translateY(-4.6rem);
+  }
+
+  45% {
+    transform: translateY(-4.6rem);
+  }
+
+  55% {
+    transform: translateY(-6.9rem);
+  }
+
+  65% {
+    transform: translateY(-6.9rem);
+  }
+
+  75% {
+    transform: translateY(-9.2rem);
+  }
+
+  95% {
+    transform: translateY(-9.2rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/*----------------Sobre mi----------*/
+.contacto{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.contacto div {
+  margin: 40px;
+}
+.contacto div a{
+  text-decoration:none;
+  color: #3498db ;
+}
+
+.contacto p{
+  font-size: 20px;
+}
+
+.skills img{
+width: 180px;
+height: 180px;
+padding: 20px;
+}
+
+.skills img:hover{
+  transform: scale(1.15);
+  transition: 200ms;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.skills img{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    }
+
+    .contacto p{
+      font-size: 15px;
+      margin: 5px;
+    }
+    .contacto div {
+      margin:10px;
+    }
+}
+
+
+/*----------------Sobre mi----------*/
+
+
+/*Cards*/
+.container-card{
+	width: 100%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+	display: flex;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding-top: 30px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+  margin: 20px;
+	border-radius: 6px;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: pointer;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+
+  footer{
+    position: fixed;
+    height: 500px;
+    
+  }
+}
+/*Fin-Cards*/
+
+footer{
+  height: 10px;
+  bottom: 0%;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  border-top: 1px solid #2fb4cc;
+
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+
+  footer{
+    position: fixed;
+    height: 25px;
+    margin-top: 10px;
+    
+  }
+}
+
+
+
+
+
